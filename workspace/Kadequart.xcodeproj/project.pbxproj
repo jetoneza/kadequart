@@ -13,7 +13,6 @@
 		392A326A1D3382E50088B290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392A32611D3382E50088B290 /* Main.storyboard */; };
 		392A326B1D3382E50088B290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A32641D3382E50088B290 /* AppDelegate.swift */; };
 		392A326C1D3382E50088B290 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A32651D3382E50088B290 /* ViewController.swift */; };
-		392A326D1D3382E50088B290 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 392A32671D3382E50088B290 /* Info.plist */; };
 		39E57CD21D338288003158D8 /* KadequartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E57CD11D338288003158D8 /* KadequartTests.swift */; };
 		39E57CDD1D338288003158D8 /* KadequartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E57CDC1D338288003158D8 /* KadequartUITests.swift */; };
 		BD61A9503A47394EA8A23CC2 /* Pods_KadequartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDA6C3628118FD511FC510E /* Pods_KadequartUITests.framework */; };
@@ -303,7 +302,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				392A326D1D3382E50088B290 /* Info.plist in Resources */,
 				392A326A1D3382E50088B290 /* Main.storyboard in Resources */,
 				392A32681D3382E50088B290 /* Assets.xcassets in Resources */,
 				392A32691D3382E50088B290 /* LaunchScreen.storyboard in Resources */,
