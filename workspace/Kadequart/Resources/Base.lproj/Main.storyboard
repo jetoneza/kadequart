@@ -53,9 +53,14 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="hO2-Ic-VWv">
+                    <navigationItem key="navigationItem" title="KadeQuart" id="hO2-Ic-VWv">
                         <barButtonItem key="backBarButtonItem" title=" " id="VTz-Xy-GNT"/>
                     </navigationItem>
+                    <keyCommands>
+                        <keyCommand/>
+                    </keyCommands>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,8 +84,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit cash on hand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xa2-X7-Zoy">
-                                                    <rect key="frame" x="15" y="13" width="123" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash on Hand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xa2-X7-Zoy">
+                                                    <rect key="frame" x="15" y="13" width="97" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -102,8 +107,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit cash on bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUv-Br-Cxn">
-                                                    <rect key="frame" x="15" y="13" width="122" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank Account Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUv-Br-Cxn">
+                                                    <rect key="frame" x="15" y="13" width="153" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -115,7 +120,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="1iG-n0-76q" kind="push" id="0vD-Wh-bQe"/>
+                                            <segue destination="GZ9-R4-zyJ" kind="push" id="o0o-9D-Hfm"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -133,39 +138,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZS-Ef-UI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1932" y="323"/>
-        </scene>
-        <!--Edit-->
-        <scene sceneID="aF8-Vu-EtA">
-            <objects>
-                <tableViewController id="1iG-n0-76q" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="UUF-lJ-OVf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <sections>
-                            <tableViewSection headerTitle="Edit cash on bank" id="Y3C-EG-Mvd">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="68K-yU-IBj">
-                                        <rect key="frame" x="0.0" y="114" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="68K-yU-IBj" id="6xK-E2-Y9N">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="1iG-n0-76q" id="orv-g8-Viz"/>
-                            <outlet property="delegate" destination="1iG-n0-76q" id="9U1-WB-Gly"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Edit" id="GUv-Fg-Ykb"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kev-ET-1Fy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2673" y="729"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WVG-az-gmv">
@@ -185,7 +157,7 @@
             </objects>
             <point key="canvasLocation" x="251" y="323"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Edit-->
         <scene sceneID="rmA-C3-3MF">
             <objects>
                 <tableViewController id="Ree-pz-cCW" sceneMemberID="viewController">
@@ -194,14 +166,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
-                            <tableViewSection headerTitle="Edit cash on hand" id="gIT-46-sXj">
+                            <tableViewSection headerTitle="Cash on Hand" id="gIT-46-sXj">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cuh-ml-nk7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="cuh-ml-nk7">
                                         <rect key="frame" x="0.0" y="114" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cuh-ml-nk7" id="B7x-zY-gAa">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10,000.00" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="eqT-Ly-fKT">
+                                                    <rect key="frame" x="18" y="12" width="574" height="19"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eqT-Ly-fKT" firstAttribute="leading" secondItem="B7x-zY-gAa" secondAttribute="leadingMargin" constant="10" id="EBz-ph-omP"/>
+                                                <constraint firstItem="eqT-Ly-fKT" firstAttribute="centerY" secondItem="B7x-zY-gAa" secondAttribute="centerY" id="JIb-uw-y5Z"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="eqT-Ly-fKT" secondAttribute="trailing" id="UvK-mr-vqh"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -212,11 +197,57 @@
                             <outlet property="delegate" destination="Ree-pz-cCW" id="isI-P3-MGu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="YJK-Vb-nWa"/>
+                    <navigationItem key="navigationItem" title="Edit" id="YJK-Vb-nWa"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffA-ge-kWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2673" y="-137"/>
+        </scene>
+        <!--Edit-->
+        <scene sceneID="L7r-N1-Sls">
+            <objects>
+                <tableViewController id="GZ9-R4-zyJ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="eS1-Je-PAN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Bank Account Balance" id="rwA-Gj-ci9">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="7P9-JX-qW4">
+                                        <rect key="frame" x="0.0" y="114" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7P9-JX-qW4" id="yOV-s7-T8W">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="14,000.00" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="tAf-UQ-sIT">
+                                                    <rect key="frame" x="18" y="12" width="574" height="19"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tAf-UQ-sIT" firstAttribute="leading" secondItem="yOV-s7-T8W" secondAttribute="leadingMargin" constant="10" id="0ze-Jb-zou"/>
+                                                <constraint firstItem="tAf-UQ-sIT" firstAttribute="centerY" secondItem="yOV-s7-T8W" secondAttribute="centerY" id="ZEd-DM-xu0"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="tAf-UQ-sIT" secondAttribute="trailing" id="iMD-KU-QSm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="GZ9-R4-zyJ" id="rLi-hC-7K3"/>
+                            <outlet property="delegate" destination="GZ9-R4-zyJ" id="bca-DC-CVB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Edit" id="8kB-Nn-1F0"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hed-Zy-jpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2673" y="655"/>
         </scene>
     </scenes>
 </document>
