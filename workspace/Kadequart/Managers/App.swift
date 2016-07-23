@@ -16,10 +16,19 @@ class App {
   var wallet = Wallet()
 
   func bootstrap() {
-    // Sample wallet data
-    wallet.bankAccountBalance = 10000
-    wallet.cashOnHand = 100
-
     backendlessManager.configure()
+
+    // Create wallet using backendless.
+    // Dirty style for testing purposes.
+    // backendlessManager.updateBLWallet(wallet).then({ wallet in
+    // self.wallet = wallet
+    // })
+
+    // Get wallet
+    // Only one wallet for now
+    let walletId = "B35A4197-E95E-3F33-FF82-C1DEFF927100"
+    backendlessManager.getWalletByObjectId(walletId).then({ [weak self] wallet in
+      self?.wallet = wallet
+    })
   }
 }

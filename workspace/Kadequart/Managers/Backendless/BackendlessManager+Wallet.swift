@@ -29,4 +29,24 @@ extension BackendlessManager {
       )
     }
   }
+
+  public func updateBLWallet(wallet: Wallet) -> Promise<Wallet> {
+    return Promise { (fulfill, reject) in
+      let dataStore = backendlessInstance.data.of(Wallet.ofClass())
+      dataStore.save(
+        wallet,
+        response: { result in
+          guard let wallet = result as? Wallet else {
+            reject(BackendlessError.InvalidTypeForObject(name: "Wallet"))
+            return
+          }
+
+          fulfill(wallet)
+        },
+        error: { fault in
+          reject(BackendlessError.ReceivedFault(fault))
+        }
+      )
+    }
+  }
 }
