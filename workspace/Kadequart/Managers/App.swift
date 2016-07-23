@@ -11,11 +11,15 @@ import Foundation
 class App {
   static let shared = App()
 
+  lazy var backendlessManager = BackendlessManager()
+
   var wallet = Wallet()
 
   func bootstrap() {
     // Sample wallet data
     wallet.bankAccountBalance = 10000
     wallet.cashOnHand = 100
+
+    BackendlessManager.configure()
   }
 }

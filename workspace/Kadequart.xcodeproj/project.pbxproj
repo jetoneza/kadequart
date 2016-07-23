@@ -18,6 +18,7 @@
 		392A326A1D3382E50088B290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392A32611D3382E50088B290 /* Main.storyboard */; };
 		392A326B1D3382E50088B290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A32641D3382E50088B290 /* AppDelegate.swift */; };
 		393631B91D437DD5003E50E9 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393631B81D437DD5003E50E9 /* Formatter.swift */; };
+		399B21D91D43882D005C8B04 /* BackendlessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399B21D81D43882D005C8B04 /* BackendlessManager.swift */; };
 		39B89A9A1D36624200502630 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B89A991D36624200502630 /* App.swift */; };
 		39B89AA01D36658200502630 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B89A9F1D36658200502630 /* AppColors.swift */; };
 		39B89AA21D3665C700502630 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B89AA11D3665C700502630 /* Appearance.swift */; };
@@ -58,6 +59,7 @@
 		392A32641D3382E50088B290 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		392A32671D3382E50088B290 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		393631B81D437DD5003E50E9 /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		399B21D81D43882D005C8B04 /* BackendlessManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendlessManager.swift; sourceTree = "<group>"; };
 		39B89A991D36624200502630 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		39B89A9F1D36658200502630 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		39B89AA11D3665C700502630 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
@@ -176,9 +178,18 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		399B21D51D43880B005C8B04 /* Backendless */ = {
+			isa = PBXGroup;
+			children = (
+				399B21D81D43882D005C8B04 /* BackendlessManager.swift */,
+			);
+			path = Backendless;
+			sourceTree = "<group>";
+		};
 		39B89A981D36622B00502630 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				399B21D51D43880B005C8B04 /* Backendless */,
 				39B89A991D36624200502630 /* App.swift */,
 				39B89AA11D3665C700502630 /* Appearance.swift */,
 			);
@@ -526,6 +537,7 @@
 			files = (
 				390D28131D435BD100B7ED15 /* SettingsController.swift in Sources */,
 				390D28161D4362D100B7ED15 /* EditController.swift in Sources */,
+				399B21D91D43882D005C8B04 /* BackendlessManager.swift in Sources */,
 				393631B91D437DD5003E50E9 /* Formatter.swift in Sources */,
 				390D28061D43487900B7ED15 /* Wallet.swift in Sources */,
 				39B89AA21D3665C700502630 /* Appearance.swift in Sources */,

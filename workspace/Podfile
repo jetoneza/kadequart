@@ -6,6 +6,7 @@ target 'Kadequart' do
   use_frameworks!
 
   # Pods for Kadequart
+  pod 'Backendless'
 
   target 'KadequartTests' do
     inherit! :search_paths
