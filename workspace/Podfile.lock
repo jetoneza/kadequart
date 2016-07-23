@@ -1,12 +1,34 @@
 PODS:
   - Backendless (3.0.30)
+  - OMGHTTPURLRQ (3.1.2):
+    - OMGHTTPURLRQ/RQ (= 3.1.2)
+  - OMGHTTPURLRQ/FormURLEncode (3.1.2)
+  - OMGHTTPURLRQ/RQ (3.1.2):
+    - OMGHTTPURLRQ/FormURLEncode
+    - OMGHTTPURLRQ/UserAgent
+  - OMGHTTPURLRQ/UserAgent (3.1.2)
+  - PromiseKit (3.2.1):
+    - PromiseKit/Foundation (= 3.2.1)
+    - PromiseKit/QuartzCore (= 3.2.1)
+    - PromiseKit/UIKit (= 3.2.1)
+  - PromiseKit/CorePromise (3.2.1)
+  - PromiseKit/Foundation (3.2.1):
+    - OMGHTTPURLRQ (~> 3.1.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (3.2.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (3.2.1):
+    - PromiseKit/CorePromise
 
 DEPENDENCIES:
   - Backendless
+  - PromiseKit (~> 3.0)
 
 SPEC CHECKSUMS:
   Backendless: 0fed76c39e231e2d7e8fc30fbe872dcca5f2ab4a
+  OMGHTTPURLRQ: 38316b56d88125c600bcdb16df8329147da2b0ee
+  PromiseKit: ef54f61501541bf18a87b25115c372184d180cea
 
-PODFILE CHECKSUM: 371c53db9a12e97bbbd4feddec0a54c414ab64a5
+PODFILE CHECKSUM: acb68c766189e978e596521cee376cc24dc01c40
 
 COCOAPODS: 1.0.1

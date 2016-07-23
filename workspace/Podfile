@@ -7,6 +7,7 @@ target 'Kadequart' do
 
   # Pods for Kadequart
   pod 'Backendless'
+  pod 'PromiseKit', '~> 3.0'
 
   target 'KadequartTests' do
     inherit! :search_paths

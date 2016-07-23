@@ -20,6 +20,6 @@ class App {
     wallet.bankAccountBalance = 10000
     wallet.cashOnHand = 100
 
-    BackendlessManager.configure()
+    backendlessManager.configure()
   }
 }
