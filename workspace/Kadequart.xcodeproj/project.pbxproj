@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D23AE4AB73DB466560BA640 /* Pods_KadequartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A346000981B15C262CA730A7 /* Pods_KadequartTests.framework */; };
+		390D28031D43446000B7ED15 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D28021D43446000B7ED15 /* Wallet.swift */; };
 		392A32681D3382E50088B290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392A325E1D3382E50088B290 /* Assets.xcassets */; };
 		392A32691D3382E50088B290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392A325F1D3382E50088B290 /* LaunchScreen.storyboard */; };
 		392A326A1D3382E50088B290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392A32611D3382E50088B290 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		23826F6C2EC7E1CECD4B41B8 /* Pods-KadequartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KadequartUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KadequartUITests/Pods-KadequartUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3475096043E147B8EE5D1FDF /* Pods-Kadequart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadequart.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kadequart/Pods-Kadequart.release.xcconfig"; sourceTree = "<group>"; };
+		390D28021D43446000B7ED15 /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		392A325E1D3382E50088B290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		392A32601D3382E50088B290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		392A32621D3382E50088B290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		390D28011D43443400B7ED15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				390D28021D43446000B7ED15 /* Wallet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		392A325D1D3382E50088B290 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +167,7 @@
 		39E57CBB1D338287003158D8 /* Kadequart */ = {
 			isa = PBXGroup;
 			children = (
+				390D28011D43443400B7ED15 /* Models */,
 				39B89A981D36622B00502630 /* Managers */,
 				392A325D1D3382E50088B290 /* Resources */,
 				392A32631D3382E50088B290 /* Shared */,
@@ -469,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390D28031D43446000B7ED15 /* Wallet.swift in Sources */,
 				39B89AA21D3665C700502630 /* Appearance.swift in Sources */,
 				39B89A9A1D36624200502630 /* App.swift in Sources */,
 				39B89AA01D36658200502630 /* AppColors.swift in Sources */,
