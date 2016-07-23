@@ -100,7 +100,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Ree-pz-cCW" kind="push" id="g9O-HB-xSF"/>
+                                            <segue destination="Ree-pz-cCW" kind="push" identifier="editCashOnHand" id="g9O-HB-xSF"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Y94-zI-ZkP">
@@ -123,7 +123,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Ree-pz-cCW" kind="push" id="tqw-C0-LM1"/>
+                                            <segue destination="Ree-pz-cCW" kind="push" identifier="editBankAccountBalance" id="tqw-C0-LM1"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -163,13 +163,13 @@
         <!--Edit-->
         <scene sceneID="rmA-C3-3MF">
             <objects>
-                <tableViewController id="Ree-pz-cCW" sceneMemberID="viewController">
+                <tableViewController id="Ree-pz-cCW" customClass="EditController" customModule="Kadequart" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="zSE-mI-ij4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
-                            <tableViewSection headerTitle="Cash on Hand" id="gIT-46-sXj">
+                            <tableViewSection headerTitle="Balance" id="gIT-46-sXj">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="cuh-ml-nk7">
                                         <rect key="frame" x="0.0" y="114" width="600" height="44"/>
@@ -208,6 +208,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="g9O-HB-xSF"/>
+        <segue reference="tqw-C0-LM1"/>
     </inferredMetricsTieBreakers>
 </document>

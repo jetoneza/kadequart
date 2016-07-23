@@ -12,6 +12,7 @@
 		390D28081D4348C300B7ED15 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D28071D4348C300B7ED15 /* Entity.swift */; };
 		390D28101D43574700B7ED15 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D280F1D43574700B7ED15 /* HomeController.swift */; };
 		390D28131D435BD100B7ED15 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D28121D435BD100B7ED15 /* SettingsController.swift */; };
+		390D28161D4362D100B7ED15 /* EditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D28151D4362D100B7ED15 /* EditController.swift */; };
 		392A32681D3382E50088B290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392A325E1D3382E50088B290 /* Assets.xcassets */; };
 		392A32691D3382E50088B290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392A325F1D3382E50088B290 /* LaunchScreen.storyboard */; };
 		392A326A1D3382E50088B290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392A32611D3382E50088B290 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		390D28071D4348C300B7ED15 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		390D280F1D43574700B7ED15 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		390D28121D435BD100B7ED15 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		390D28151D4362D100B7ED15 /* EditController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditController.swift; sourceTree = "<group>"; };
 		392A325E1D3382E50088B290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		392A32601D3382E50088B290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		392A32621D3382E50088B290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +128,14 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		390D28141D4362BB00B7ED15 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				390D28151D4362D100B7ED15 /* EditController.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
 		392A325D1D3382E50088B290 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 		392A32631D3382E50088B290 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				390D28141D4362BB00B7ED15 /* Edit */,
 				390D28111D435B4600B7ED15 /* Settings */,
 				390D280E1D43572600B7ED15 /* Home */,
 				392A32641D3382E50088B290 /* AppDelegate.swift */,
@@ -503,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				390D28131D435BD100B7ED15 /* SettingsController.swift in Sources */,
+				390D28161D4362D100B7ED15 /* EditController.swift in Sources */,
 				390D28061D43487900B7ED15 /* Wallet.swift in Sources */,
 				39B89AA21D3665C700502630 /* Appearance.swift in Sources */,
 				390D28081D4348C300B7ED15 /* Entity.swift in Sources */,
