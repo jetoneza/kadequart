@@ -25,7 +25,7 @@ class HomeController: UIViewController {
   }
 
   func setUpViews() {
-    totalBalanceLabel.text? = wallet.getFormattedBalance()
+    totalBalanceLabel.text? = Formatter.walletFormatter(wallet).getFormattedBalance()
   }
 
   override func didReceiveMemoryWarning() {

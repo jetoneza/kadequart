@@ -17,4 +17,11 @@ public struct Formatter {
 
     return formatter.stringFromNumber(balance)!
   }
+
+  public static func walletFormatter(wallet: Wallet) -> WalletFormatter {
+    var walletFormatter = WalletFormatter()
+    walletFormatter.wallet = wallet
+
+    return walletFormatter
+  }
 }
