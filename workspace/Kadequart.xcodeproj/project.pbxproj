@@ -10,11 +10,12 @@
 		2D23AE4AB73DB466560BA640 /* Pods_KadequartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A346000981B15C262CA730A7 /* Pods_KadequartTests.framework */; };
 		390D28061D43487900B7ED15 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D28051D43487900B7ED15 /* Wallet.swift */; };
 		390D28081D4348C300B7ED15 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D28071D4348C300B7ED15 /* Entity.swift */; };
+		390D28101D43574700B7ED15 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D280F1D43574700B7ED15 /* HomeController.swift */; };
+		390D28131D435BD100B7ED15 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D28121D435BD100B7ED15 /* SettingsController.swift */; };
 		392A32681D3382E50088B290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392A325E1D3382E50088B290 /* Assets.xcassets */; };
 		392A32691D3382E50088B290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392A325F1D3382E50088B290 /* LaunchScreen.storyboard */; };
 		392A326A1D3382E50088B290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392A32611D3382E50088B290 /* Main.storyboard */; };
 		392A326B1D3382E50088B290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A32641D3382E50088B290 /* AppDelegate.swift */; };
-		392A326C1D3382E50088B290 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A32651D3382E50088B290 /* ViewController.swift */; };
 		39B89A9A1D36624200502630 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B89A991D36624200502630 /* App.swift */; };
 		39B89AA01D36658200502630 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B89A9F1D36658200502630 /* AppColors.swift */; };
 		39B89AA21D3665C700502630 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B89AA11D3665C700502630 /* Appearance.swift */; };
@@ -46,11 +47,12 @@
 		3475096043E147B8EE5D1FDF /* Pods-Kadequart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadequart.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kadequart/Pods-Kadequart.release.xcconfig"; sourceTree = "<group>"; };
 		390D28051D43487900B7ED15 /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		390D28071D4348C300B7ED15 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		390D280F1D43574700B7ED15 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		390D28121D435BD100B7ED15 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		392A325E1D3382E50088B290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		392A32601D3382E50088B290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		392A32621D3382E50088B290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		392A32641D3382E50088B290 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		392A32651D3382E50088B290 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		392A32671D3382E50088B290 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39B89A991D36624200502630 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		39B89A9F1D36658200502630 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -108,6 +110,22 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		390D280E1D43572600B7ED15 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				390D280F1D43574700B7ED15 /* HomeController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		390D28111D435B4600B7ED15 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				390D28121D435BD100B7ED15 /* SettingsController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		392A325D1D3382E50088B290 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,8 +140,9 @@
 		392A32631D3382E50088B290 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				390D28111D435B4600B7ED15 /* Settings */,
+				390D280E1D43572600B7ED15 /* Home */,
 				392A32641D3382E50088B290 /* AppDelegate.swift */,
-				392A32651D3382E50088B290 /* ViewController.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -483,12 +502,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390D28131D435BD100B7ED15 /* SettingsController.swift in Sources */,
 				390D28061D43487900B7ED15 /* Wallet.swift in Sources */,
 				39B89AA21D3665C700502630 /* Appearance.swift in Sources */,
 				390D28081D4348C300B7ED15 /* Entity.swift in Sources */,
 				39B89A9A1D36624200502630 /* App.swift in Sources */,
+				390D28101D43574700B7ED15 /* HomeController.swift in Sources */,
 				39B89AA01D36658200502630 /* AppColors.swift in Sources */,
-				392A326C1D3382E50088B290 /* ViewController.swift in Sources */,
 				392A326B1D3382E50088B290 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@
         <!-- -->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title=" " id="BYZ-38-t0r" customClass="ViewController" customModule="Kadequart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title=" " id="BYZ-38-t0r" customClass="HomeController" customModule="Kadequart" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,13 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="32,765.41" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9L-cJ-nrF">
-                                <rect key="frame" x="167" y="95" width="267" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9L-cJ-nrF">
+                                <rect key="frame" x="238" y="139" width="125" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="KDQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WD2-fa-YZB">
-                                <rect key="frame" x="281" y="168" width="38" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KDQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WD2-fa-YZB">
+                                <rect key="frame" x="281" y="212" width="38" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -61,6 +61,9 @@
                     </keyCommands>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="totalBalanceLabel" destination="j9L-cJ-nrF" id="mGw-xQ-TW5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,7 +72,7 @@
         <!--Settings-->
         <scene sceneID="X4b-zh-VWl">
             <objects>
-                <tableViewController id="26c-a4-Idk" sceneMemberID="viewController">
+                <tableViewController id="26c-a4-Idk" customClass="SettingsController" customModule="Kadequart" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="rzI-05-PsZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,7 +123,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="GZ9-R4-zyJ" kind="push" id="o0o-9D-Hfm"/>
+                                            <segue destination="Ree-pz-cCW" kind="push" id="tqw-C0-LM1"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -201,53 +204,10 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffA-ge-kWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2673" y="-137"/>
-        </scene>
-        <!--Edit-->
-        <scene sceneID="L7r-N1-Sls">
-            <objects>
-                <tableViewController id="GZ9-R4-zyJ" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="eS1-Je-PAN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <sections>
-                            <tableViewSection headerTitle="Bank Account Balance" id="rwA-Gj-ci9">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="7P9-JX-qW4">
-                                        <rect key="frame" x="0.0" y="114" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7P9-JX-qW4" id="yOV-s7-T8W">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="14,000.00" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="tAf-UQ-sIT">
-                                                    <rect key="frame" x="18" y="12" width="574" height="19"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
-                                                </textField>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="tAf-UQ-sIT" firstAttribute="leading" secondItem="yOV-s7-T8W" secondAttribute="leadingMargin" constant="10" id="0ze-Jb-zou"/>
-                                                <constraint firstItem="tAf-UQ-sIT" firstAttribute="centerY" secondItem="yOV-s7-T8W" secondAttribute="centerY" id="ZEd-DM-xu0"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="tAf-UQ-sIT" secondAttribute="trailing" id="iMD-KU-QSm"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="GZ9-R4-zyJ" id="rLi-hC-7K3"/>
-                            <outlet property="delegate" destination="GZ9-R4-zyJ" id="bca-DC-CVB"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Edit" id="8kB-Nn-1F0"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hed-Zy-jpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2673" y="655"/>
+            <point key="canvasLocation" x="2696" y="323"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="g9O-HB-xSF"/>
+    </inferredMetricsTieBreakers>
 </document>
