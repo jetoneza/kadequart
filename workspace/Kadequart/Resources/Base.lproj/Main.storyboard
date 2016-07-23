@@ -201,10 +201,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Edit" id="YJK-Vb-nWa"/>
+                    <connections>
+                        <outlet property="balanceInput" destination="eqT-Ly-fKT" id="7hC-Ie-Qu5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffA-ge-kWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2696" y="323"/>
+            <point key="canvasLocation" x="2602" y="323"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

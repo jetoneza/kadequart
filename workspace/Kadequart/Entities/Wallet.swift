@@ -29,6 +29,20 @@ public final class Wallet: NSObject, Entity {
 
   func getFormattedBalance() -> String {
     let balance = self.getBalance()
+    return self.formatBalanceValue(balance)
+  }
+
+  func getFormattedCashOnHand() -> String {
+    let balance = self.cashOnHand
+    return self.formatBalanceValue(balance)
+  }
+
+  func getFormattedBankAccountBalance() -> String {
+    let balance = self.bankAccountBalance
+    return self.formatBalanceValue(balance)
+  }
+
+  func formatBalanceValue(balance: Double) -> String {
     let formatter = NSNumberFormatter()
 
     formatter.numberStyle = .CurrencyStyle

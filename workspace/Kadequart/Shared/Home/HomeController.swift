@@ -16,10 +16,15 @@ class HomeController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    setUpWallet()
+    setUpViews()
+  }
 
-    // Sample data
-    wallet.cashOnHand = 100;
-    wallet.bankAccountBalance = 10000
+  func setUpWallet() {
+    wallet = App.shared.wallet
+  }
+
+  func setUpViews() {
     totalBalanceLabel.text? = wallet.getFormattedBalance()
   }
 
