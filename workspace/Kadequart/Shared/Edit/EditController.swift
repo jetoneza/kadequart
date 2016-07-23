@@ -13,11 +13,13 @@ public enum EditType {
   case BankAccountBalance
 }
 
-class EditController: UITableViewController {
+class EditController: UITableViewController, UITextFieldDelegate {
   var type: EditType = .CashOnHand
-  var wallet = Wallet()
+  var balance: Double = 0
+  var wallet: Wallet?
 
   @IBOutlet var balanceInput: UITextField!
+  @IBOutlet var doneButton: UIBarButtonItem!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -27,13 +29,38 @@ class EditController: UITableViewController {
 
   func setUpWallet() {
     wallet = App.shared.wallet
+    balance = self.type == .CashOnHand ? self.wallet!.cashOnHand : self.wallet!.bankAccountBalance
   }
 
   func setUpInput() {
-    balanceInput.text? = self.type == .CashOnHand ? self.wallet.getFormattedCashOnHand() : self.wallet.getFormattedBankAccountBalance()
+    doneButton.enabled = false
+    balanceInput.delegate = self
+    balanceInput.text = Formatter.formatBalanceValue(balance)
+  }
+
+  func textFieldShouldReturn(textField: UITextField) -> Bool {
+    balanceInput.resignFirstResponder()
+    return true
+  }
+
+  func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+    doneButton.enabled = true
+    return true
   }
 
   override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     return self.type == .CashOnHand ? "Cash on hand" : "Bank Account Balance"
+  }
+
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if doneButton === sender {
+      balance = Double(balanceInput.text!) ?? balance
+
+      if self.type == .CashOnHand {
+        wallet!.cashOnHand = balance
+      } else {
+        wallet!.bankAccountBalance = balance
+      }
+    }
   }
 }

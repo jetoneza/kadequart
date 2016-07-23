@@ -200,12 +200,20 @@
                             <outlet property="delegate" destination="Ree-pz-cCW" id="isI-P3-MGu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Edit" id="YJK-Vb-nWa"/>
+                    <navigationItem key="navigationItem" title="Edit" id="YJK-Vb-nWa">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Qqx-dh-4lB">
+                            <connections>
+                                <segue destination="L17-yU-Tlu" kind="unwind" unwindAction="unwindToSettings:" id="Arc-2P-47e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="balanceInput" destination="eqT-Ly-fKT" id="7hC-Ie-Qu5"/>
+                        <outlet property="doneButton" destination="Qqx-dh-4lB" id="cf3-ge-AkB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffA-ge-kWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="L17-yU-Tlu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2602" y="323"/>
         </scene>

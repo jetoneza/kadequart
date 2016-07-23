@@ -16,4 +16,10 @@ class SettingsController: UITableViewController {
       editContoller.type = .BankAccountBalance
     }
   }
+
+  @IBAction func unwindToSettings(sender: UIStoryboardSegue) {
+    if let sourceViewController = sender.sourceViewController as? EditController, wallet = sourceViewController.wallet {
+      App.shared.wallet = wallet
+    }
+  }
 }
