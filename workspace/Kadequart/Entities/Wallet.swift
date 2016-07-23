@@ -8,7 +8,8 @@
 
 import Foundation
 
-protocol Wallet {
-  var cashOnHand: Double { get set }
-  var bankAccountBalance: Double { get set }
+public final class Wallet: NSObject, Entity {
+  public var objectId: String!
+  var cashOnHand: Double!
+  var bankAccountBalance: Double!
 }
